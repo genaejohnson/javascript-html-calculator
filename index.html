@@ -2,19 +2,25 @@
 <html>
     <head>
         <title>my calculator</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family= Share:700Open+Sans:800|VT323" rel="stylesheet">
     </head>
     <body>
-      <h1 id="title">my calculator</h1>
+      <h1 id="title">My calculator</h1>
       <div id="keypad">
-          <table border="2" >
+       <table border="2">
+                    <tr>
+                  <td colspan="4" id="display-bar" height="20px"><div id="display-bar"></div></td>
               <tr>
-                  <td colspan="4" id="display-bar" height="20px"></td>
-              </tr
-              <tr>
+               
+              </tr>
                   <td><input type="button" value="9" onclick="display(9)"/></td>
                    <td><input type="button" value="8" onclick="display(8)"/></td>
                     <td><input type="button" value="7" onclick="display(7)"/></td>
                      <td><input type="button" value="/" onclick="display('/')"/></td>
+              </tr>
+              <tr>
+               <td colspan="4"><div id="calculator-brand"></div></td>
               </tr>
                <tr>
                   <td><input type="button" value="6" onclick="display(6)"/></td>
